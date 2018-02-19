@@ -1,0 +1,86 @@
+@import 'theme';
+@import 'navbar';
+
+body{
+    margin: 0;
+    padding-top: 6.4rem;
+    font: 400 13px 'Montserrat';
+}
+
+.evento-bar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 3.4rem;
+    width: 100%;
+    flex-direction: row;
+    padding: 16px;
+    background-color: $primary80;
+    div {
+        flex: 1;
+        color: white;
+    }
+}
+
+#dynatable-search-ingresos-table, select{
+    border-bottom: 1px solid $primary80 !important;
+}
+
+select, input {
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: $primary-dark;
+    outline: none;
+}
+
+.table-container {
+    padding: 16px;
+}
+
+#ingresos-table {
+    width: 100%;
+    margin-bottom: 16px;
+    border-spacing: 0px;
+    border: 1px solid #ccc;
+
+    tbody tr {
+        transition: background-color 0.2s ease-in;
+        background-color: $background;
+        color: $primary-dark;
+
+        &:hover {
+            background-color: $primary-light;
+        }
+
+        &.disabled {
+            background-color: rgba(200, 200, 200, 0.5);
+            color: rgba(91, 102, 106, 0.618);
+        }
+
+    }
+
+    th {
+        background-color: $primary;
+        padding: 8px;
+        border-bottom: 1px solid $white;
+
+        &.hidden{
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+    td {
+        min-width: 0;
+        text-align: start;
+        padding: 8px;
+        border-color: $primary-dark;
+        border-bottom: 1px solid #ccc;
+    }
+
+}
+
+

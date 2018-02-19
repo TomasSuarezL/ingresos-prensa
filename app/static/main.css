@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400|Raleway:300,400,700|Roboto:300,900");
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  height: 3.4rem;
+  background: #C03221;
+  color: #F5F3EE;
+  font-family: 'Roboto';
+  font-size: 20px;
+  z-index: 3; }
+  .navbar img {
+    width: 31px;
+    height: 36px;
+    padding-left: 16px; }
+  .navbar .navbar-title {
+    flex: 3 3 360px;
+    margin: 0 0 0 12px;
+    text-align: center; }
+
+body {
+  margin: 0;
+  padding-top: 6.4rem;
+  font: 400 13px 'Montserrat'; }
+
+.evento-bar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 3.4rem;
+  width: 100%;
+  flex-direction: row;
+  padding: 16px;
+  background-color: #bd4639; }
+  .evento-bar div {
+    flex: 1;
+    color: white; }
+
+#dynatable-search-ingresos-table, select {
+  border-bottom: 1px solid #bd4639 !important; }
+
+select, input {
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: #373D3F;
+  outline: none; }
+
+.table-container {
+  padding: 16px; }
+
+#ingresos-table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0px;
+  border: 1px solid #ccc; }
+  #ingresos-table tbody tr {
+    transition: background-color 0.2s ease-in;
+    background-color: rgba(233, 233, 240, 0.535);
+    color: #373D3F; }
+    #ingresos-table tbody tr:hover {
+      background-color: #CBCBD1; }
+    #ingresos-table tbody tr.disabled {
+      background-color: rgba(200, 200, 200, 0.5);
+      color: rgba(91, 102, 106, 0.618); }
+  #ingresos-table th {
+    background-color: #C03221;
+    padding: 8px;
+    border-bottom: 1px solid #F5F3EE; }
+    #ingresos-table th.hidden {
+      display: none; }
+    #ingresos-table th a {
+      text-decoration: none; }
+  #ingresos-table td {
+    min-width: 0;
+    text-align: start;
+    padding: 8px;
+    border-color: #373D3F;
+    border-bottom: 1px solid #ccc; }
