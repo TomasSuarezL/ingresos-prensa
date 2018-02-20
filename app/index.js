@@ -1,5 +1,6 @@
 var express = require('express'), app = express(), bodyParser = require("body-parser");
 var exphbs  = require('express-handlebars');
+var path = require('path');
 const PORT = process.env.PORT || 3002;
 
 app.use(bodyParser.json());

@@ -1,0 +1,11 @@
+[Unit]
+Description=Ingresos Prensa FE
+After=network.target
+
+[Service]
+ExecStart= /usr/bin/node /server/ingresos-prensa/ingresos-prensa/app/index.js
+Restart=always
+User=desarrollo
+Type=simple
+[Install]
+WantedBy=multi-user.target
